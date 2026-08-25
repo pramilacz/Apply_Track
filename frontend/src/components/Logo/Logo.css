@@ -1,0 +1,37 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.logo-icon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.logo-sm .logo-icon {
+  width: 26px;
+  height: 26px;
+}
+.logo-sm .logo-word {
+  font-size: var(--text-sm);
+}
+
+.logo-md .logo-icon {
+  width: 32px;
+  height: 32px;
+}
+.logo-md .logo-word {
+  font-size: var(--text-base);
+}
+
+.logo-lg .logo-icon {
+  width: 48px;   /* was 40px */
+  height: 48px;
+}
+
+.logo-lg .logo-word {
+  font-size: 24px;   /* was var(--text-lg) */
+}

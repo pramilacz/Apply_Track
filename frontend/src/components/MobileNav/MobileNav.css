@@ -1,0 +1,130 @@
+.mobile-topbar {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .mobile-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0 var(--space-4);
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+
+  .mobile-topbar-toggle {
+    background: transparent;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 6px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.mobile-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  z-index: 60;
+  animation: fadeIn var(--duration) var(--ease);
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 82%;
+  max-width: 300px;
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5) var(--space-4);
+  animation: drawerIn 220ms var(--ease);
+}
+
+@keyframes drawerIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+.mobile-drawer-header button {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.mobile-drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.mobile-drawer-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 12px var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  min-height: 44px;
+}
+
+.mobile-drawer-link-active {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.mobile-drawer-footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-4);
+}
+
+.mobile-drawer-user {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-1);
+}
+
+.mobile-drawer-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--text-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

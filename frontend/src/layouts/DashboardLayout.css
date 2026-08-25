@@ -1,0 +1,31 @@
+.dashboard-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.dashboard-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.dashboard-content {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+.dashboard-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1023px) {
+  .dashboard-shell {
+    flex-direction: column;
+  }
+  .dashboard-content {
+    padding: var(--space-6) var(--space-4);
+  }
+}

@@ -1,0 +1,43 @@
+.stat-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  border-top: 3px solid var(--color-border-strong);
+}
+
+.stat-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.stat-card-label {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.stat-card-icon {
+  color: var(--color-text-tertiary);
+}
+
+.stat-card-value {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.stat-card-applied {
+  border-top-color: var(--color-applied);
+}
+.stat-card-interview {
+  border-top-color: var(--color-interview);
+}
+.stat-card-offer {
+  border-top-color: var(--color-offer);
+}
+.stat-card-rejected {
+  border-top-color: var(--color-rejected);
+}

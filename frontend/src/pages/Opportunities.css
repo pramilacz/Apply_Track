@@ -1,0 +1,24 @@
+.opportunities-page h1 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.opportunities-page > p {
+  margin-top: 4px;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.opportunities-page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 640px) {
+  .opportunities-page-grid {
+    grid-template-columns: 1fr;
+  }
+}

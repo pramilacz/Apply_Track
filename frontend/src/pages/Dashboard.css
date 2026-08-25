@@ -1,0 +1,109 @@
+.dashboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-header::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--color-accent-soft), transparent 70%);
+  top: -180px;
+  right: -100px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.dashboard-header > div:first-child,
+.dashboard-header .btn {
+  position: relative;
+  z-index: 1;
+}
+
+.dashboard-greeting {
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dashboard-subtitle {
+  margin-top: 6px;
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.dashboard-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-5) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.dashboard-section-header h2 {
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.dashboard-section-link {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+.dashboard-section-link:hover {
+  color: var(--color-accent-hover);
+}
+
+.dashboard-table-pad {
+  padding: 0 var(--space-5) var(--space-2);
+}
+
+.dashboard-opps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+  padding: var(--space-5);
+}
+
+@media (max-width: 640px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .dashboard-opps-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .dashboard-header .btn {
+    width: 100%;
+  }
+}

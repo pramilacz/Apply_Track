@@ -1,0 +1,40 @@
+.app-form-page {
+  max-width: 640px;
+}
+
+.app-form-page h1 {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.app-form-subtitle {
+  margin-top: 4px;
+  margin-bottom: var(--space-6);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.app-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 var(--space-4);
+}
+
+.app-form-actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+@media (max-width: 560px) {
+  .app-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .app-form-actions {
+    flex-direction: column-reverse;
+  }
+  .app-form-actions .btn {
+    width: 100%;
+  }
+}
