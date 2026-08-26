@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import Logo from "../Logo/Logo";
 import Button from "../Button/Button";
 import "./Navbar.css";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -21,6 +22,7 @@ export default function Navbar() {
         </nav>
 
         <div className="navbar-actions">
+          <ThemeToggle />
           <Link to="/login" className="navbar-signin">
             Sign in
           </Link>
@@ -41,6 +43,7 @@ export default function Navbar() {
 
       {open && (
         <div className="navbar-mobile">
+          <ThemeToggle />
           <a href="#features" onClick={() => setOpen(false)}>
             Features
           </a>

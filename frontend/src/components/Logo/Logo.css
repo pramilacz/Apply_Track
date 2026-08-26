@@ -12,19 +12,25 @@
 }
 
 .logo-sm .logo-icon {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
 }
 .logo-sm .logo-word {
-  font-size: var(--text-sm);
+  font-family: "Maiandra GD", "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-size: 24px;   /* was var(--text-lg) */
 }
 
 .logo-md .logo-icon {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
 }
 .logo-md .logo-word {
-  font-size: var(--text-base);
+  font-family: "Maiandra GD", "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-size: 22px;   /* was var(--text-lg) */
 }
 
 .logo-lg .logo-icon {
@@ -33,5 +39,8 @@
 }
 
 .logo-lg .logo-word {
+  font-family: "Maiandra GD", "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   font-size: 24px;   /* was var(--text-lg) */
 }
