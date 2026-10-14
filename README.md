@@ -3,6 +3,9 @@
 A clean, minimal internship & job application tracker for students — rebuilt as a
 **React (Vite) frontend** talking to a **Flask JSON API** backend.
 
+**Preview:**
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/f4885210-636c-4505-a7eb-b013de26e26f" />
+
 This is a full redesign and migration of the original Flask/Jinja app. The backend's
 core logic (auth, database, CRUD, Google login) is preserved; only the interface layer
 changed. If you're new to this stack, follow the steps below in order — you don't need
